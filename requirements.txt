@@ -1,0 +1,7 @@
+ariadne==0.11.0
+pandas
+Django==2.2.13
+psycopg2-binary==2.8.5
+graphql-core==3.0.5
+python-dotenv==0.13.0
+gunicorn==20.0.4
