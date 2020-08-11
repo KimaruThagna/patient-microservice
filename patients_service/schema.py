@@ -1,8 +1,8 @@
 from ariadne import MutationType, QueryType, gql, load_schema_from_path, make_executable_schema
 from os.path import dirname, join
 
-from patient.resolvers.mutations.Patients import *
-from patient.resolvers.queries.Patients import *
+from patient.resolvers.mutations.patients import *
+from patient.resolvers.queries.patients import *
 
 def load_typedef_from_schema():
     type_def = load_schema_from_path(join(dirname(dirname(__file__)), "./gql"))
@@ -13,8 +13,8 @@ def load_typedef_from_schema():
 # query type and its fields resolvers
 def bind_query_type_to_resolvers():
     query = QueryType()
-    query.set_field("Patient", PatientsQueries.get_Patient)
-    query.set_field("Patients", PatientsQueries.get_Patients)
+    query.set_field("patient", PatientsQueries.get_patient)
+    query.set_field("patients", PatientsQueries.get_patients)
     return query
 
 def bind_mutation_type_to_resolvers():
