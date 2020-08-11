@@ -3,7 +3,7 @@ from django.db import models
 from utils.base_models import BaseModel
 
 
-class Doctor(BaseModel):
+class Patient (BaseModel):
 
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
