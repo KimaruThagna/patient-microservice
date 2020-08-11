@@ -1,0 +1,16 @@
+scalar DateTime
+
+
+type Doctor
+{
+    uid: ID!
+    first_name: String!
+    last_name: String!
+    patient_number: String!
+    county: String!
+    created_at: DateTime
+    is_deleted: Boolean!
+    is_active: Boolean!
+    deleted_at: DateTime
+
+}

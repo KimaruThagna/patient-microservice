@@ -1,0 +1,27 @@
+input patientCreationInput {
+    first_name: String!
+    last_name: String!
+    patient_number: String!
+    county: String!
+}
+
+input patientUpdateInput {
+    uid: ID!
+    first_name: String
+    last_name: String
+    patient_number: String
+    county: String
+}
+
+input patientFilterInput {
+    last_name__contains: String
+    first_name__contains: String
+    patient_number: String
+    county__contains: String
+    is_deleted: Boolean
+    is_active: Boolean
+    created_at__lte: DateTime
+    created_at__gte: DateTime
+}
+
+input paginationInput {first: Int after: String last: Int before: String}

@@ -1,0 +1,17 @@
+type SingleObjectPayload {
+    status: Boolean!
+    error: String
+    object: Doctor!
+}
+
+
+type MultipleObjectsPayload {
+    status: Boolean!
+    error: String
+    object: [Doctor!]!
+}
+
+type StatusPayload {
+    status: Boolean!
+    error: String!
+}

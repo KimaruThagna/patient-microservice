@@ -1,0 +1,9 @@
+type Mutation {
+
+    createPatient(creation_input: patientCreationInput!): SingleObjectPayload!
+    updatePatient(update_input: patientUpdateInput!): SingleObjectPayload!
+    deletePatient(uid:ID!): StatusPayload!
+    activatePatient(uid:ID!): StatusPayload!
+    deactivatePatient(uid:ID!): StatusPayload!
+
+}
