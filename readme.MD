@@ -1,7 +1,7 @@
 ## Patient Service Micro Django
 Part 2 of a journey through building a django-graphql based micro service.
 The repo also explores using [ariadne](https://ariadnegraphql.org/) to build a federated schema.
-This is part of a micro service architecture where this handles the patient's service. Other services in this project are the `Patients` and `diagnosis` services.
+This is part of a micro service architecture where this handles the patient's service. Other services in this project are the `Doctors` and `diagnosis` services.
  To view the code on federation, head over to the [federation](https://github.com/KimaruThagna/micro-django/tree/federation) branch of this repo.
  Major changes will be in executing the schema in `patients_service/schema.py` and types in `gql/types.graphql`
 ## Tech stack
