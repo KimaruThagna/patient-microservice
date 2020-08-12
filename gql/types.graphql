@@ -1,9 +1,10 @@
 scalar DateTime
 
 
-type Patient @key(fields: "uid")
+type Patient @key(fields: "patient_number")
 {
     uid: ID!
+    id: ID!
     first_name: String!
     last_name: String!
     patient_number: String!

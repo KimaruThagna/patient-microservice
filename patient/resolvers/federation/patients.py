@@ -7,7 +7,7 @@ patient_federated_object = FederatedObjectType("Patient")
 
 @patient_federated_object.resolve_reference
 def get_patient_by_uid(representation):
-    return Patient.objects.get(uid=representation.get("uid"))
+    return Patient.objects.get(patient_number=representation.get("patient_number"))
 
 
 @patient_federated_object.field("uid")
@@ -28,8 +28,8 @@ def resolve_first_name(obj, *_):
 def resolve_last_name(obj, *_):
     return obj.last_name
 
-@patient_federated_object.field("license_number")
-def resolve_license_number(obj, *_):
+@patient_federated_object.field("patient_number")
+def resolve_patient_number(obj, *_):
     return obj.patient_number
 
 @patient_federated_object.field("county")
