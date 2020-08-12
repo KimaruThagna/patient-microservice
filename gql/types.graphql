@@ -1,7 +1,7 @@
 scalar DateTime
 
 
-type Doctor
+type Patient
 {
     uid: ID!
     first_name: String!
