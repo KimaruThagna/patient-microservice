@@ -33,9 +33,9 @@ To spin up the service, run the command
 ```apex
 docker-compose up
 ```
-To access the service via the broswer, log on to [http://0.0.0.0:1337/]() since we are serving the app via NGINX
+To access the service via the broswer, log on to [http://0.0.0.0:1338/]() since we are serving the app via NGINX
 
-To view the app from the admin side, access the admin via the url [http://0.0.0.0:1337/admin]() and log in with the superuser credentials created in the `.env` file
+To view the app from the admin side, access the admin via the url [http://0.0.0.0:1338/admin]() and log in with the superuser credentials created in the `.env` file
 
 ## Sample Query
 - `get_patients`
